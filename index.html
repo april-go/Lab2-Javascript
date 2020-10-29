@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="flex-container">
+          <div class="header">
+          
+             <!-- ***********************  HEADER  *********************** -->
+               <div><h1>Intro to Javascript</h1></div>
+      
+          
+          <div><p><h2>Lab 1:</h2>
+      </p>  <div class="e1">
+      <p> <ol><h3>EXERCISE 1:The Fortune Teller</h3></ol>
+        Why pay a fortune teller when you can just program your fortune yourself? Store the following into variables: job title, geographic location, annual salary, company name. Output your fortune to the console like so: "You will be a X in Y, making $N for Z."</p>
+
+        <li>let myJob = `UX designer`</li>
+<li>let myLocation = `Toronto`</li>
+<li>let mySalary =`100000`</li>
+<li>let myCompany =`Google`</li><p>
+
+console.log(`You will be a ${myJob} in ${myLocation}, making $${mySalary} for ${myCompany}.`) </p>
+   <p>
+</div>
+<div class="e2">
+    <p> <ol><h3>EXERCISE 2: The Age Calculator</h3></ol>
+        Forgot how old someone is? Calculate it! Store the current year in a variable. Store their birth year in a variable. Calculate their age based on the stored values. Output them to the console like so: "They are NN years old.", substituting the values."</p>
+
+        <li>let currentYear = `2020`</li>
+        <li>let birthYear =`1986`</li>
+        <li>currentAge = currentYear - birthYear</li>
+ <p>
+    console.log(`They are ${currentAge} years old.`)</p>
+ <p> 
+ </div>
+ <div class="e3">
+    <p> <ol><h3>EXERCISE 3: The Lifetime Supply Calculator</h3></ol>
+        Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more! Store your current age into a variable. Store a maximum age into a variable. Store an estimated amount per day (as a number). Calculate how many you would eat total for the rest of your life. Output the result to the console like so: "You will need NN to last you until the ripe old age of X".</p>
+
+        <li>let myAge =`34`</li>
+        <li>let maxAge =`70`</li>
+        <li>let perDay =`2`</li>
+        <li>let snackConsumed = (maxAge - myAge) * perDay</li>
+ <p>
+    console.log(`You will need ${snackConsumed} to last you until the ripe old age of ${maxAge}`)</p>
+ <p> 
+ </div>
+ <div class="e4">
+    <p> <ol><h3>EXERCISE 4: The Geometrizer</h3></ol>
+        Calculate properties of a circle, using the definitions here. Store a radius into a variable. Calculate the circumference based on the radius, and output "The circumference is NN". Calculate the area based on the radius, and output "The area is NN".</p>
+
+        <li>let radius =`5`</li>
+        <li>let pi = Math.PI</li>
+        <li>let cir = 2 * pi * radius</li>
+        <li>let area = pi * radius ** 2</li>
+ <p>
+    console.log(`The circumference is ${cir}`)
+    <br>console.log(`The area is ${area}`)</p>
+ <p> 
+ </div>
+ <div class="e5">
+    <p> <ol><h3>EXERCISE 5: The Temperature Converter</h3></ol>
+        It's hot out! Let's make a converter based on the steps here. Store a celsius temperature into a variable. Convert it to fahrenheit and output "NN°C is NN°F".  Now store a fahrenheit temperature into a variable. Convert it to celsius and output "NN°F is NN°C."</p>
+
+        <li>let currentCel =`10`</li>
+        <li>let currentFah =`20`</li>
+        <li>let celsius =(10 * 9/5) + 32</li>
+        <li>let fahrenheit =(32 - 32) * 5/9</li>
+ <p>
+    console.log(`${celsius}°C is ${fahrenheit}°F`)
+    <br>console.log(`${fahrenheit}°F is ${celsius}°C`)</p>
+ <p> 
+ </div>
+ <div class="e6">
+     <h2>Lab 2</h2>
+    <p> <ol><h3> EXERCISE 1</h3></ol>
+        Write a function named squareNumber that will take one argument (a number), square that number, and return the result. It should also log a string like "The result of squaring the number 3 is 9.</p>
+        function squareNumber(num1) {
+            <br>return num1 ** 2 <br> } 
+        <li>let n1 =9 </li>
+       <li> let E1 = squareNumber(n1)</li>
+        
+        <p>
+        console.log(`The result of squaring the ${n1} is ${E1}.`)</p>
+
+ 
+ <p> 
+ </div>
+ <div class="e7">
+   <p> <ol><h3>EXERCISE 2</h3></ol>
+    Write a function named halfNumber that will take one argument (a number), divide it by 2, and return the result. It should also log a string like "Half of 5 is 2.5."</p>
+
+       function halfNumber(num2) {
+        <br>return num2 / 2 <br>} 
+       <li>let n2 = 10</li>
+       <li>let E2= halfNumber(n2)</li>
+<p>
+    console.log(`Half of ${n2} is ${E2}.`)</p>
+<p> 
+</div>
+<div class="e8">
+    <p> <ol><h3>EXERCISE 3</h3></ol>
+        Write a function named percentOf that will take two numbers, figure out what percent the first number represents of the second number, and return the result. It should also log a string like "2 is 50% of 4."</p>
+ 
+        function percentOf(per1, per2) {
+            <br>return per1 / per2*100
+        <br>}
+        <li>let p1 = 9</li>
+        <li>let p2 = 18</li>
+        <li>let E3 = percentOf(p1,p2)</li>
+       
+ <p>
+    console.log(`${p1} is ${E3}% of ${p2}`)</p>
+ <p> 
+ </div>
+ <div class="e9">
+    <p> <ol><h3>EXERCISE 4</h3></ol>
+        Write a function named areaOfCircle that will take one argument (the radius), calculate the area based on that, and return the result. It should also log a string like "The area for a circle with radius 2 is 12.566370614359172."
+        //      Bonus: Round the result so there are only two digits after the decimal.</p>
+ 
+        function areaOfCircle(n1) {
+           <br> return n1 **2 * p
+       <br> }
+        <li>let p = 3.14</li>
+        <li>let E4 = areaOfCircle (n1)</li>
+ <p>
+    console.log(`The area for a circle with radius of ${n1} is ${E4}`)</p>
+ <p> 
+ </div>
+ <div class="e10">
+    <p> <ol><h3>EXERCISE 5</h3></ol>
+        Write a function named runAll that will take one argument (a number) and perform the following operations, using the functions you wrote earlier
+        <br> 1. Take half of the number and store the result.
+        <br> 2. Square the result of #1 and store that result. 
+        <br> 3. Calculate the area of a circle with the result of #2 as the radius.   
+        <br> 4. Calculate what percentage that area (#3) is of the squared result (#2).</p>
+ 
+        function runAll(n3) { 
+       <br> }
+        <li>let n3 = 6</li>
+        <li>let a1 = halfNumber(n3)</li>
+        <li>let a2 = squareNumber(a1)</li>
+        <li>let a3 = areaOfCircle(a2)</li>
+        <li>let a4 = percentOf(a3,a2)</li>
+    
+ <p>
+    console.log(`Exercise no.5 
+    <br> 1) ans: ${a1} 
+    <br> 2) ans: ${a2} 
+    <br> 3) ans: ${a3}
+    <br> 4) ans: ${a4}%`)</p>
+ <p> 
+ </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
